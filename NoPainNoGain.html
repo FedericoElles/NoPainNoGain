@@ -1,0 +1,201 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="NoPainNoGain.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand"><span>Brand</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="section"></div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="text-center text-muted">Kontostand</h4>
+          </div>
+          <div class="col-md-6">
+            <h1 class="text-center text-danger">6,50 €</h1>
+            <h3 class="text-center text-warning">+ 2,50 €</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a class="btn btn-lg btn-primary"><i class="fa fa-fw fa-flash"></i>Pain (+ 0,50 €)</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p></p>
+            <p>
+              <a class="btn btn-success"><i class="fa fa-fw fa-check"></i>Bestätigen</a>
+              <a class="btn btn-default"><i class="fa fa-fw fa-close"></i>Abbrechen</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-muted">Ziele:</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Ziel</th>
+                  <th>€</th>
+                  <th>Fortschritt</th>
+                  <th>Aktionen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Lego</td>
+                  <td>6 €</td>
+                  <td>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 60%;">60%</div>
+                    </div>
+                  </td>
+                  <td>
+                    <a class="btn btn-link btn-xs"><i class="fa fa-fw fa-check"></i>Gain</a>
+                    <a class="btn btn-link btn-xs"><i class="fa fa-fw fa-remove"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="btn btn-link"><i class="fa fa-fw fa-plus"></i><font face="FontAwesome"><span style="line-height: 14px;">Neuer Wunsch</span></font></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 class="text-left text-muted">Erfüllte Wünsche</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Datum</th>
+                  <th>Ziel</th>
+                  <th>Gain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03.02.2016</td>
+                  <td>Lego Tumbler</td>
+                  <td>5 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 class="text-left text-muted">Ewiger Kontostand:</h4>
+            <h1 class="text-center">112,50 €</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 class="text-left text-muted">Historie:</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Jahr</th>
+                  <th>KW</th>
+                  <th>Gain</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016</td>
+                  <td>03</td>
+                  <td>23 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fade modal text-left">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">Wunscherstellung</h4>
+          </div>
+          <div class="modal-body">
+            <p>Neuen Wunsch (Gain) anlegen.</p>
+            <form role="form">
+              <div class="form-group">
+                <label class="control-label" for="exampleInputEmail1">Beschreibung</label>
+                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="exampleInputAmount">Kosten</label>
+                <input class="form-control" id="exampleInputAmount" placeholder="0,0" type="text">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Abbrechen</a>
+            <a class="btn btn-primary">Wunsch anlegen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-info" id="footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="lead nav nav-pills">
+              <li>
+                <a href="#">Kontostand:<span class="badge">42 €</span></a>
+              </li>
+              <li>
+                <a href="#">Ziele<span class="badge">2</span></a>
+              </li>
+              <li>
+                <a href="#">Erreicht<span class="badge">42</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
