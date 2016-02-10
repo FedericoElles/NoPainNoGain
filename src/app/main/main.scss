@@ -1,0 +1,74 @@
+body {
+	background-color: #EFEFEF;
+	margin-bottom: 70px;
+}
+
+
+
+div.section{
+	box-shadow: 0 1px 2px #aaa;
+	background-color: white;
+	margin-bottom: 20px;
+	min-height: 300px;
+	min-height: 50vh;
+	border-radius: 3px;
+	
+	h4 {
+		font-size: 3rem;
+    	font-weight: 200;
+	}
+	
+	
+	&.konto {
+		padding: 40px 0;
+	}
+}
+
+
+.row.full{
+  margin-right: -30px;
+  margin-left: -30px;
+  
+  td {
+	padding:4px;  
+	> span {
+		text-align: left;
+		text-overflow: ellipsis;
+		overflow-x: hidden;
+		white-space: nowrap;
+		max-width: 100px;
+		display: block;	
+	  }
+  }
+  
+}
+
+
+footer{
+	background-color: $colorBackgound;
+	position: fixed;
+	border-top: 1px solid #aaa;
+	bottom: -5px;
+	left: 0px;
+	right: 0px;
+	
+	ul {
+		display: inline-block;
+	}
+	div {
+		margin-top: 3px;
+	}
+	
+	.nav-pills > li > a {
+		&:focus{
+			background-color: transparent;
+		}
+		&.active{
+			background-color: #eeeeee;
+		}
+		> .badge{
+			margin-bottom: 4px;
+		}
+	}
+}
+

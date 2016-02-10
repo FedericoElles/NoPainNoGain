@@ -1,0 +1,215 @@
+<div class="container">
+<!--<acme-navbar></acme-navbar>-->
+
+  <!--<pre ng-bind="main.data | json"></pre>-->
+
+  <div class="section konto" id="konto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-center text-muted">{{ 'TITLE_ACCOUNT' | translate }}</h4>
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center text-danger"><span ng-bind="main.data.stats.current | currency"></span></h1>
+          <h3 class="text-center text-warning">&nbsp;
+            <span ng-show="main.ctrl.painStaging">+ <span ng-bind="main.ctrl.painStaging | currency"></span>
+            </span>&nbsp;
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a ng-click="main.ctrl.painStaging = main.ctrl.painStaging + 0.5" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Pain (+ <span ng-bind="0.5 | currency"></span>)</a>
+        </div>
+      </div>
+      <div class="row" ng-style="{visibility:main.ctrl.painStaging ? 'auto' : ' hidden'}">
+        <div class="col-md-12 text-center">
+          <p></p>
+          <p>
+            <a ng-click="main.npng.addPain(main.ctrl.painStaging);main.ctrl.painStaging=0" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></i> {{ 'CONFIRM' | translate }}</a>
+            <a ng-click="main.ctrl.painStaging=0" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span> {{ 'CANCEL' | translate }}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="section" id="gains">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="text-muted">{{ 'TITLE_GOALS' | translate }}</h4>
+        </div>
+      </div>
+      <div class="row full">
+        <div class="col-md-12 text-center">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>{{ 'GOAL' | translate }}</th>
+                <th></th>
+                <th>{{ 'PROGRESS' | translate }}</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="(index, gain) in main.data.gains.current track by $index">
+                <td><span ng-bind="index+1"></span></td>
+                <td><span ng-bind="gain.name"></span></td>
+                <td><span ng-bind="gain.amount | currency"></span></td>
+                <td>
+                  <progressbar value="main.data.stats.current/gain.amount*100">
+                    <span ng-bind="main.data.stats.current/gain.amount*100 | number:0 "></span> %
+                  </progressbar>                  
+                </td>
+                <td>
+                  <a ng-click="main.really('gain', index, gain)" ng-disabled="main.data.stats.current/gain.amount<1" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-ok"></span></a>
+                  <a ng-click="main.really('drop', index, gain)" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-remove"></span></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <a ng-click="main.open()" class="btn btn-link"><span class="glyphicon glyphicon-plus"></span> {{ 'NEW_GOAL' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="section" id="gained">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 class="text-left text-muted">{{ 'TITLE_GOALS_SUCCEEDED' | translate }}</h4>
+        </div>
+      </div>
+      <div class="row full">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>{{ 'DATE' | translate }}</th>
+                <th>{{ 'GOAL' | translate }}</th>
+                <th>{{ 'GAIN' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="gain in main.data.gains.history">
+                <td><span ng-bind="gain.dataHistory | date"></span></td>
+                <td><span ng-bind="gain.name"></span></td>
+                <td><span ng-bind="gain.amount | currency"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 class="text-left text-muted">{{ 'TITLE_BALANCE_TOTAL' | translate }}</h4>
+          <h1 class="text-center">
+            <span ng-bind="main.data.stats.total | currency"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 class="text-left text-muted">{{ 'TITLE_HISTORY' | translate }}</h4>
+        </div>
+      </div>
+      <div class="row full">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>{{ 'YEAR' | translate }}</th>
+                <th>{{ 'MONTH' | translate }}</th>
+                <th>{{ 'GAIN' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  ng-repeat="month in main.data.calendar track by month.key">
+                <td><span ng-bind="(month.key+'').substr(0,4)"></span></td>
+                <td><span ng-bind="(month.key+'').substr(4,2)"></span></td>
+                <td><span ng-bind="month.amount | currency"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<script type="text/ng-template" id="myModalContent.html">        
+        <div class="modal-header">
+          <button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">{{ 'NEW_GOAL' | translate }}</h4>
+        </div>
+        <div class="modal-body" stop-event="touchend">
+          <form role="form">
+            <div class="form-group">
+              <label class="control-label" for="name">{{ 'DESCRIPTION' | translate }}</label>
+              <input autofocus ng-model="ctrl.name" class="form-control" name="name" placeholder="" type="text">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="amount">{{ 'AMOUNT' | translate }}</label>
+              <input ng-model="ctrl.amount" class="form-control" name="amount" placeholder="0" type="number">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a ng-click="cancel()" class="btn btn-default" data-dismiss="modal">{{ 'CANCEL' | translate }}</a>
+          <a ng-click="ok()" class="btn btn-primary">{{ 'CONFIRM' | translate }}</a>
+        </div>
+</script>        
+
+  
+  <script type="text/ng-template" id="really.html">        
+        <div class="modal-header">
+          <button ng-click="cancel()" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">{{ title | translate }}</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            {{ 'GOAL' | translate }} <span ng-bind="caption"></span> {{ question | translate }}
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a ng-click="cancel()" class="btn btn-default" data-dismiss="modal">{{ 'CANCEL' | translate }}</a>
+          <a ng-click="ok()" class="btn btn-primary">{{ 'CONFIRM' | translate }}</a>
+        </div>
+</script>        
+
+  
+  
+  <footer  id="footer">
+    <div class="text-center">
+          <ul class="lead nav nav-pills">
+            <li>
+              <a du-smooth-scroll du-scrollspy href="#konto">{{ 'ACCOUNT' | translate }}<span class="badge" ng-bind="main.data.stats.current | currency"></span></a>
+            </li>
+            <li>
+              <a du-smooth-scroll du-scrollspy href="#gains">{{ 'GOALS' | translate }}<span class="badge" ng-bind="main.data.gains.current.length"></span></a>
+            </li>
+            <li>
+              <a du-smooth-scroll du-scrollspy href="#gained">{{ 'GOALS_MET' | translate }}<span class="badge" ng-bind="main.data.gains.history.length"></span></a>
+            </li>
+          </ul>
+    </div>
+  </footer>
+
+</div>
