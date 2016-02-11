@@ -27,6 +27,16 @@ Challenge yourself how much money you can save in your daily rountine!
 * Drink one beer less at the bar 
 
 
+### Screenshots
+
+#### Balance
+<img src="https://github.com/FedericoElles/NoPainNoGain/blob/master/screenshots/v1/1.png" width="300px">
+
+#### List of current gains
+<img src="https://github.com/FedericoElles/NoPainNoGain/blob/master/screenshots/v1/2.png" width="300px">
+
+#### Adding a new gain
+<img src="https://github.com/FedericoElles/NoPainNoGain/blob/master/screenshots/v1/3.png" width="300px">
 
 
 ### Hints
