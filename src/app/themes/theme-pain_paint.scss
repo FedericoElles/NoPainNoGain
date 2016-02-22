@@ -1,6 +1,26 @@
 // theme pain paint
 
+// variables
+$pp-DarkRed: #2d140a;
+$pp-RedStone: #b24f2a;
+$pp-LightFlesh: #f0dcd4;
+
 body.theme_PainPaint {
-    background-color: #2d140a;
+    background-color: darken( $pp-DarkRed, 3% );
+    font-family: 'Permanent Marker', 'Architects Daughter',  cursive;
+    
+    .section {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .konto {
+        background-color: $pp-DarkRed;
+        
+        h4 {
+            color: $pp-RedStone;
+        }
+    }
 }
     
