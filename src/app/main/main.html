@@ -19,7 +19,11 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <a ng-click="main.ctrl.painStaging = main.ctrl.painStaging + 0.5" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Pain (+ <span ng-bind="0.5 | currency"></span>)</a>
+          <a ng-click="main.ctrl.painStaging = main.ctrl.painStaging + 0.5" class="btn btn-lg btn-primary">
+              <span class="glyphicon glyphicon-flash"></span> 
+              <span class="btn-headline">Pain</span> 
+              <span class="btn-value">(+ <span ng-bind="0.5 | currency"></span>)</span>
+            </a>
         </div>
       </div>
       <div class="row" ng-style="{visibility:main.ctrl.painStaging ? 'auto' : ' hidden'}">
