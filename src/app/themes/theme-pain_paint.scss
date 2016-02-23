@@ -4,6 +4,7 @@
 $pp-DarkRed: #2d140a;
 $pp-RedStone: #b24f2a;
 $pp-LightFlesh: #f0dcd4;
+$pp-petrol: #004d63;
 
 body.theme_PainPaint {
     background-color: darken( $pp-DarkRed, 3% );
@@ -29,6 +30,29 @@ body.theme_PainPaint {
         
         h4 {
             color: $pp-RedStone;
+            font-size: 4vh;
+        }
+        h1 {
+            color: $pp-LightFlesh;
+            font-size: 8vh;
+        }
+        .btn-primary {
+            background-color: $pp-petrol;
+            border-color: lighten( $pp-petrol, 6%);
+            border-radius: 15vh;
+            border-style: groove;
+            border-width: 1vh;
+            height: 30vh;
+            position: relative;
+            width: 30vh;
+            
+            .glyphicon-flash {
+                color: lighten( $pp-petrol, 5%);
+                font-size: 32vh;
+                left: -1vh;
+                position: absolute;
+                top: -1vh;
+            }
         }
     }
 }
