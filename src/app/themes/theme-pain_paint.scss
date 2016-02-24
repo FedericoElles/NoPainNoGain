@@ -36,31 +36,41 @@ body.theme_PainPaint {
             color: $pp-LightFlesh;
             font-size: 8vh;
         }
-        .btn-primary {
-            background-color: $pp-petrol;
-            border-color: lighten( $pp-petrol, 6%);
-            border-radius: 15vh;
-            border-style: groove;
-            border-width: 1vh;
-            height: 30vh;
-            position: relative;
-            width: 30vh;
-            
-            .glyphicon-flash {
-                color: lighten( $pp-petrol, 5%);
-                font-size: 32vh;
-                left: -1vh;
-                position: absolute;
-                top: -1vh;
+        .btn {
+            &-primary {
+
+                background-color: $pp-petrol;
+                border-color: lighten( $pp-petrol, 6%);
+                border-radius: 15vh;
+                border: none;
+                height: 30vh;
+                position: relative;
+                width: 30vh;
+
+                .glyphicon-flash {
+                    color: lighten( $pp-petrol, 5%);
+                    font-size: 32vh;
+                    left: -1vh;
+                    position: absolute;
+                    top: -1vh;
+                }
             }
-            .btn-headline {
+            &-headline, &-value {
                 display: block;
-                font-size: 18vh;
-                left: -5vh;
                 position: absolute;
                 text-align: center;
-                top: -3vh;
                 width: 40vh;
+            }
+
+            &-headline {
+                font-size: 12vh;
+                left: -5vh;
+                top: 3vh;
+            }
+            &-value {
+                font-size: 2vh;
+                left: -5vh;
+                top: 20vh;  
             }
         }
     }
