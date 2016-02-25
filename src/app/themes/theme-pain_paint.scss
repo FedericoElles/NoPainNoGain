@@ -38,7 +38,6 @@ body.theme_PainPaint {
         }
         .btn {
             &-primary {
-
                 background-color: darken($pp-RedStone, 5%);
                 border-radius: 15vh;
                 border: none;
@@ -48,15 +47,11 @@ body.theme_PainPaint {
                 width: 3em;
 
                 .glyphicon-flash {
-                    font-size: 32vh;
-                    left: -1vh;
+                    color: lighten($pp-RedStone, 5%);
+                    font-size: 28vh;
+                    left: 1vh;
                     position: absolute;
-                    top: -1vh;
-                    
-                    // glow animation
-                    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
-                    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
-                    animation: neon5 1.5s ease-in-out infinite alternate;
+                    top: 1vh;
                 }
                 
             }
@@ -68,13 +63,13 @@ body.theme_PainPaint {
             }
 
             &-headline {
-                color: $pp-RedStone;
+                color: lighten( $pp-RedStone, 25%);
                 font-size: 12vh;
                 left: -5vh;
                 top: 3vh;
             }
             &-value {
-                color: lighten( $pp-RedStone, 15%);
+                color: lighten( $pp-RedStone, 25%);
                 left: -5vh;
                 top: 10vh;
                 
@@ -83,10 +78,28 @@ body.theme_PainPaint {
                 }
             }
         }
+        .btn-primary {
+            &:hover {
+            
+                .glyphicon-flash {
+                    color: white;
+                    font-size: 32vh;
+                    left: -1vh;
+                    top: -1vh;
+                    
+                    // glow animation
+                    -webkit-animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
+                    -moz-animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
+                    animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
+                }
+                
+                
+            }
+        }
     }
 }
 
-@-webkit-keyframes neon5 {
+@-webkit-keyframes btn-IconFlash {
   from {
     text-shadow:    0 0 10px #fff,
                     0 0 20px #fff, 
@@ -109,7 +122,7 @@ body.theme_PainPaint {
   }
 }
 
-@-moz-keyframes neon5 {
+@-moz-keyframes btn-IconFlash {
   from {
     text-shadow:    0 0 10px #fff, 
                     0 0 20px #fff, 
@@ -132,7 +145,7 @@ body.theme_PainPaint {
   }
 }
 
-@keyframes neon5 {
+@keyframes btn-IconFlash {
   from {
     text-shadow:    0 0 10px #fff, 
                     0 0 20px #fff, 
