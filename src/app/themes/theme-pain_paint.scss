@@ -48,7 +48,6 @@ body.theme_PainPaint {
                 width: 3em;
 
                 .glyphicon-flash {
-                    color: lighten( $pp-RedStone, 5%);
                     font-size: 32vh;
                     left: -1vh;
                     position: absolute;
@@ -69,7 +68,7 @@ body.theme_PainPaint {
             }
 
             &-headline {
-                color: lighten( $pp-RedStone, 25%);
+                color: $pp-RedStone;
                 font-size: 12vh;
                 left: -5vh;
                 top: 3vh;
@@ -89,28 +88,70 @@ body.theme_PainPaint {
 
 @-webkit-keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow:    0 0 10px #fff,
+                    0 0 20px #fff, 
+                    0 0 30px #fff, 
+                    0 0 40px #FF9900, 
+                    0 0 70px #FF9900, 
+                    0 0 80px #FF9900, 
+                    0 0 100px #FF9900, 
+                    0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow:    0 0 5px #fff, 
+                    0 0 10px #fff, 
+                    0 0 15px #fff, 
+                    0 0 20px #FF9900, 
+                    0 0 35px #FF9900, 
+                    0 0 40px #FF9900, 
+                    0 0 50px #FF9900, 
+                    0 0 75px #FF9900;
   }
 }
 
 @-moz-keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow:    0 0 10px #fff, 
+                    0 0 20px #fff, 
+                    0 0 30px #fff, 
+                    0 0 40px #FF9900, 
+                    0 0 70px #FF9900, 
+                    0 0 80px #FF9900, 
+                    0 0 100px #FF9900, 
+                    0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow:    0 0 5px #fff, 
+                    0 0 10px #fff, 
+                    0 0 15px #fff, 
+                    0 0 20px #FF9900, 
+                    0 0 35px #FF9900, 
+                    0 0 40px #FF9900, 
+                    0 0 50px #FF9900, 
+                    0 0 75px #FF9900;
   }
 }
 
 @keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow:    0 0 10px #fff, 
+                    0 0 20px #fff, 
+                    0 0 30px #fff, 
+                    0 0 40px #FF9900, 
+                    0 0 70px #FF9900, 
+                    0 0 80px #FF9900, 
+                    0 0 100px #FF9900, 
+                    0 0 150px #FF9900;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow:    0 0 5px #fff, 
+                    0 0 10px #fff, 
+                    0 0 15px #fff, 
+                    0 0 20px #FF9900, 
+                    0 0 35px #FF9900, 
+                    0 0 40px #FF9900, 
+                    0 0 50px #FF9900, 
+                    0 0 75px #FF9900;
   }
 }
     
