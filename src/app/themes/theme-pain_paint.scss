@@ -39,21 +39,27 @@ body.theme_PainPaint {
         .btn {
             &-primary {
 
-                background-color: $pp-petrol;
-                border-color: lighten( $pp-petrol, 6%);
+                background-color: darken($pp-RedStone, 5%);
                 border-radius: 15vh;
                 border: none;
+                font-size: 10vh;
                 height: 30vh;
                 position: relative;
-                width: 30vh;
+                width: 3em;
 
                 .glyphicon-flash {
-                    color: lighten( $pp-petrol, 5%);
+                    color: lighten( $pp-RedStone, 5%);
                     font-size: 32vh;
                     left: -1vh;
                     position: absolute;
                     top: -1vh;
+                    
+                    // glow animation
+                    -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+                    -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+                    animation: neon5 1.5s ease-in-out infinite alternate;
                 }
+                
             }
             &-headline, &-value {
                 display: block;
@@ -63,16 +69,48 @@ body.theme_PainPaint {
             }
 
             &-headline {
+                color: lighten( $pp-RedStone, 25%);
                 font-size: 12vh;
                 left: -5vh;
                 top: 3vh;
             }
             &-value {
-                font-size: 2vh;
+                color: lighten( $pp-RedStone, 15%);
                 left: -5vh;
-                top: 20vh;  
+                top: 10vh;
+                
+                &-num {
+                    font-size: 3vh;
+                }
             }
         }
     }
+}
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
 }
     
