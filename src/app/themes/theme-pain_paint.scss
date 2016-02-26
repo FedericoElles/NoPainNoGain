@@ -52,6 +52,11 @@ body.theme_PainPaint {
                     left: 1vh;
                     position: absolute;
                     top: 1vh;
+                    text-shadow: 0 0 0 #fff;
+                    
+                    transition-property: color, text, text-shadow, font-size, left, top;
+                    transition-duration: 0.5s;
+                    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out ease-in-out, ease-in-out;
                 }
                 
             }
@@ -59,7 +64,7 @@ body.theme_PainPaint {
                 display: block;
                 position: absolute;
                 text-align: center;
-                width: 40vh;
+                width: 40vh;;
             }
 
             &-headline {
@@ -67,6 +72,10 @@ body.theme_PainPaint {
                 font-size: 12vh;
                 left: -5vh;
                 top: 3vh;
+                    
+                transition-property: font-size, left, top;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
             }
             &-value {
                 color: lighten( $pp-RedStone, 25%);
@@ -93,6 +102,12 @@ body.theme_PainPaint {
                     animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
                 }
                 
+                .btn-headline {
+                    color: darken( $pp-RedStone, 25%);
+                    font-size: 16vh;
+                    left: -5vh;
+                    top: 0;
+                }
                 
             }
         }
