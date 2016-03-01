@@ -55,7 +55,7 @@ body.theme_PainPaint {
                     text-shadow: 0 0 0 #fff;
                     
                     transition-property: color, text, text-shadow, font-size, left, top;
-                    transition-duration: 0.5s;
+                    transition-duration: 0.1s;
                     transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out ease-in-out, ease-in-out;
                 }
                 
@@ -74,8 +74,8 @@ body.theme_PainPaint {
                 top: 3vh;
                     
                 transition-property: font-size, left, top;
-                transition-duration: 0.3s;
-                transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+                transition-duration: 0.1s;
+                transition-timing-function: ease-in, ease-in, ease-in;
             }
             &-value {
                 color: lighten( $pp-RedStone, 25%);
@@ -88,7 +88,7 @@ body.theme_PainPaint {
             }
         }
         .btn-primary {
-            &:hover {
+            &:hover, &:focus {
             
                 .glyphicon-flash {
                     color: white;
@@ -104,9 +104,11 @@ body.theme_PainPaint {
                 
                 .btn-headline {
                     color: darken( $pp-RedStone, 25%);
-                    font-size: 16vh;
-                    left: -5vh;
-                    top: 0;
+                    
+                    // headline pulse
+                    -webkit-animation: btn-Headline 1.5s ease-in-out infinite alternate;
+                    -moz-animation: btn-Headline 1.5s ease-in-out infinite alternate;
+                    animation: btn-Headline 1.5s ease-in-out infinite alternate;
                 }
                 
             }
@@ -182,4 +184,45 @@ body.theme_PainPaint {
                     0 0 18.75vh #FF9900;
   }
 }
+
+@-webkit-keyframes btn-Headline {
+  from {
+    font-size:      16vh;
+    left:           -6vh; 
+    top:            1vh;
+  }
+  to {
+    font-size:      14vh;
+    left:           -5vh;
+    top:            2vh;
+  }
+}
+
+@-moz-keyframes btn-Headline {
+  from {
+    font-size:      16vh;
+    left:           -6vh; 
+    top:            1vh;
+  }
+  to {
+    font-size:      14vh;
+    left:           -5vh;
+    top:            2vh;
+  }
+}
+
+@keyframes btn-Headline {
+  from {
+    font-size:      16vh;
+    left:           -6vh; 
+    top:            1vh;
+  }
+  to {
+    font-size:      14vh;
+    left:           -5vh;
+    top:            2vh;
+  }
+}
+
+
     
