@@ -24,10 +24,8 @@
                 </span>
             </a>
             <div ng-style="{visibility:main.ctrl.painStaging ? 'auto' : ' hidden'}">
-                <p>
-                    <a ng-click="main.npng.addPain(main.ctrl.painStaging);main.ctrl.painStaging=0" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></i></a>
-                    <a ng-click="main.ctrl.painStaging=0" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></a>
-                </p>
+                <a ng-click="main.npng.addPain(main.ctrl.painStaging);main.ctrl.painStaging=0" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span></i></a>
+                <a ng-click="main.ctrl.painStaging=0" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span></a>
             </div>
         </div>
     </div>
