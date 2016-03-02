@@ -37,6 +37,13 @@ body.theme_PainPaint {
             font-size: 8vh;
         }
         .btn {
+            &-area {
+                text-align: center;
+                padding-top: 2vh;
+                position: fixed;
+                top: 20vh;
+                width: 100%;
+            }
             &-primary {
                 background-color: darken($pp-RedStone, 5%);
                 border-radius: 15vh;
