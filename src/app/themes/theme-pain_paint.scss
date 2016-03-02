@@ -97,6 +97,26 @@ body.theme_PainPaint {
                     font-size: 3vh;
                 }
             }
+            &-success, &-default {
+                padding: 0;
+                text-align: center;
+                border-radius: 6vh;
+                border: none;
+                width: 12vh;
+                
+                .glyphicon {
+                    line-height: 12vh;
+                    font-size: 4vh;
+                }
+            }
+            &-default {
+                background-color: $pp-LightFlesh;
+                color: $pp-RedStone;
+            }
+            &-success {
+                background-color: $pp-petrol;
+                color: $pp-LightFlesh;
+            }
         }
         .btn-primary {
             &:hover, &:focus {
