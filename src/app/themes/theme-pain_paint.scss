@@ -119,7 +119,7 @@ body.theme_PainPaint {
                 }
             }
             &-default {
-                background-color: $pp-LightFlesh;
+                background-color:  lighten( $pp-RedStone, 15%);
                 color: $pp-RedStone;
                 left: 50%;
                 margin-left: 10vw;
