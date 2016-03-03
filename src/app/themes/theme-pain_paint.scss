@@ -105,11 +105,13 @@ body.theme_PainPaint {
                 }
             }
             &-success, &-default {
+                border: none;
                 padding: 0;
                 text-align: center;
                 border-radius: 6vh;
-                border: none;
+                position: fixed;
                 width: 12vh;
+                top: 54vh;
                 
                 .glyphicon {
                     line-height: 12vh;
@@ -119,10 +121,14 @@ body.theme_PainPaint {
             &-default {
                 background-color: $pp-LightFlesh;
                 color: $pp-RedStone;
+                left: 50%;
+                margin-left: 10vw;
             }
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
+                right: 50%;
+                margin-right: 10vw;
             }
         }
         .btn-primary {
