@@ -27,6 +27,7 @@ body.theme_PainPaint {
     
     .konto {
         background-color: $pp-DarkRed;
+        position: relative;
         
         h4 {
             color: $pp-RedStone;
@@ -40,7 +41,7 @@ body.theme_PainPaint {
             &-area {
                 text-align: center;
                 padding-top: 2vh;
-                position: fixed;
+                position: absolute;
                 top: 20vh;
                 width: 100%;
             }
