@@ -25,7 +25,7 @@
                 <span class="btn-value"><span class="btn-value-num">(+ <span ng-bind="0.5 | currency"></span>)</span>
                 </span>
             </a>
-            <div ng-style="{visibility:main.ctrl.painStaging ? 'auto' : ' hidden'}">
+            <div ng-class="{'show-decision-btn':main.ctrl.painStaging}" class="">
                 <a ng-click="main.npng.addPain(main.ctrl.painStaging);main.ctrl.painStaging=0" 
                    class="btn btn-success">
                     <span class="glyphicon glyphicon-ok"></span>

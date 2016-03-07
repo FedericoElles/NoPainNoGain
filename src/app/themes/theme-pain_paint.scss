@@ -53,6 +53,7 @@ body.theme_PainPaint {
                 height: 30vh;
                 position: relative;
                 width: 3em;
+                z-index: 2;
 
                 .glyphicon-flash {
                     color: lighten($pp-RedStone, 5%);
@@ -110,9 +111,10 @@ body.theme_PainPaint {
                 padding: 0;
                 text-align: center;
                 border-radius: 6vh;
-                position: fixed;
+                position: absolute;
                 width: 12vh;
-                top: 54vh;
+                top: 10vh;
+                z-index: 0;
                 
                 .glyphicon {
                     line-height: 12vh;
@@ -123,13 +125,13 @@ body.theme_PainPaint {
                 background-color:  lighten( $pp-RedStone, 15%);
                 color: $pp-RedStone;
                 left: 50%;
-                margin-left: 10vw;
+                margin-left: 0;
             }
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
                 right: 50%;
-                margin-right: 10vw;
+                margin-right: 0;
             }
         }
         .btn-primary {
@@ -167,6 +169,23 @@ body.theme_PainPaint {
                 }
                 
                 
+            }
+        }
+        .show-decision-btn {
+            
+            .btn {
+                
+                &-success, &-default {
+                    top: 34vh;
+                }
+                &-default {
+                    left: 50%;
+                    margin-left: 10vw;
+                }
+                &-success {
+                    right: 50%;
+                    margin-right: 10vw;
+                }
             }
         }
     }
