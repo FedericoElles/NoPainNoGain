@@ -126,12 +126,20 @@ body.theme_PainPaint {
                 color: $pp-RedStone;
                 left: 50%;
                 margin-left: 0;
+                    
+                transition-property: top, margin-left;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-out, ease-out;
             }
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
                 right: 50%;
                 margin-right: 0;
+                    
+                transition-property: top, margin-right;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-out, ease-out;
             }
         }
         .btn-primary {
