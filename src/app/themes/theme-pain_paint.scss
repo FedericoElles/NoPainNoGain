@@ -38,11 +38,7 @@ body.theme_PainPaint {
         h1 {
             color: $pp-LightFlesh;
             font-size: 6vh;
-            top: 32vh;
-                
-            transition-property: top;
-            transition-duration: 0.25s;
-            transition-timing-function: ease-out;
+            top: 56vh;
         }
         h3 {
             color: darken($pp-LightFlesh, 20%);
@@ -56,18 +52,14 @@ body.theme_PainPaint {
         h4 {
             color: $pp-RedStone;
             font-size: 4vh;
-            top: 32vh;
-                
-            transition-property: top;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-out;
+            top: 3vh;
         }
         .btn {
             &-area {
                 text-align: center;
                 padding-top: 2vh;
                 position: absolute;
-                top: 24vh;
+                top: 14vh;
                 width: 100%;
             }
             &-primary {
@@ -167,22 +159,23 @@ body.theme_PainPaint {
                 transition-timing-function: ease-out, ease-out;
             }
         }
-        .btn-primary {
-            &:hover, &:focus {
-                box-shadow: 0 0 8px rgba(0,0,0,0.8);
+        &.pain-btn-active {
             
+            .btn-primary {
+                box-shadow: 0 0 8px rgba(0,0,0,0.8);
+
                 .glyphicon-flash {
                     color: white;
                     font-size: 32vh;
                     left: -1vh;
                     top: -1vh;
-                    
+
                     // glow animation
                     -webkit-animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
                     -moz-animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
                     animation: btn-IconFlash 1.5s ease-in-out infinite alternate;
                 }
-                
+
                 .btn {
                     &-headline {
                         color: darken( $pp-RedStone, 25%);
@@ -194,32 +187,21 @@ body.theme_PainPaint {
                     }
                     &-value {
                         color: darken( $pp-RedStone, 25%);
-                            
+
                         transition-property: color;
                         transition-duration: 0.1s;
                         transition-timing-function: ease-in;
                     }
                 }
-                
-                
-            }
-        }
-        &.pain-btn-active {
-        
-            h1 {
-                top: 6vh
             }
             h3 {
-                top: 13vh
-            }
-            h4 {
-                top: 3vh;
+                top: 48vh
             }
             
             .btn {
                 
                 &-success, &-default {
-                    top: 34vh;
+                    top: 57vh;
                 }
                 &-default {
                     right: 50%;
