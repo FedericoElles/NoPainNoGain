@@ -3,21 +3,21 @@
 
     <!--<pre ng-bind="main.data | json"></pre>-->
 
-    <div class="section konto" id="konto">
-<!--
+    <div class="section konto" id="konto" ng-class="{'pain-btn-active':main.ctrl.painStaging}">
         <div class="quote-area">
             <h4 class="text-center text-muted">{{ 'TITLE_ACCOUNT' | translate }}</h4>
 
             <h1 class="text-center text-danger">
                 <span ng-bind="main.data.stats.current | currency"></span>
             </h1>
+<!--
             <h3 class="text-center text-warning">
                 <span ng-show="main.ctrl.painStaging">+ 
                     <span ng-bind="main.ctrl.painStaging | currency"></span>
                 </span>
             </h3>
-        </div>
 -->
+        </div>
         <div class="btn-area">
             <a ng-click="main.ctrl.painStaging = main.ctrl.painStaging + 0.5" class="btn btn-lg btn-primary">
                 <span class="glyphicon glyphicon-flash"></span>
@@ -25,7 +25,7 @@
                 <span class="btn-value"><span class="btn-value-num">(+ <span ng-bind="0.5 | currency"></span>)</span>
                 </span>
             </a>
-            <div ng-class="{'show-decision-btn':main.ctrl.painStaging}" class="">
+            <div>
                 <a ng-click="main.npng.addPain(main.ctrl.painStaging);main.ctrl.painStaging=0" 
                    class="btn btn-success">
                     <span class="glyphicon glyphicon-ok"></span>
