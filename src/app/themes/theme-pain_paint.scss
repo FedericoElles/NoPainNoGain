@@ -8,7 +8,7 @@ $pp-petrol: #004d63;
 
 body.theme_PainPaint {
     background-color: darken( $pp-DarkRed, 3% );
-    font-family: 'Permanent Marker', 'Architects Daughter',  cursive;
+    font-family: 'Architects Daughter',  cursive;
     margin: 0;
     padding: 0;
     
@@ -24,13 +24,17 @@ body.theme_PainPaint {
         height: 100vh;
         width: 100vw;
     }
+
     
+// konto style
+// -----------------------------------    
     .konto {
         background-color: $pp-DarkRed;
         position: relative;
         
         h1, h3, h4 {
             display: block;
+            font-family: 'Architects Daughter',  cursive;
             position: absolute;
             text-align: center;
             width: 100%;
@@ -101,7 +105,8 @@ body.theme_PainPaint {
                 display: block;
                 position: absolute;
                 text-align: center;
-                width: 40vh;;
+                width: 40vh;
+                font-family: 'Permanent Marker', 'Architects Daughter',  cursive;
             }
 
             &-headline {
@@ -216,6 +221,10 @@ body.theme_PainPaint {
     }
 }
 
+    
+// konto animation
+// -----------------------------------  
+
 @-webkit-keyframes btn-IconFlash {
   from {
     text-shadow:    0 0 1.25vh #fff, 
@@ -323,6 +332,13 @@ body.theme_PainPaint {
     top:            0vh;
   }
 }
+    
 
+// footer
+// -----------------------------------  
+#footer {
+    background-color: lighten($pp-RedStone, 5%);
+    border-top: none;
+}
 
     
