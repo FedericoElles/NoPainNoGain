@@ -29,21 +29,11 @@ body.theme_PainPaint {
         background-color: $pp-DarkRed;
         position: relative;
         
-        h4, h1 {
+        h1, h3, h4 {
             display: block;
             position: absolute;
             text-align: center;
             width: 100%;
-        }
-        
-        h4 {
-            color: $pp-RedStone;
-            font-size: 4vh;
-            top: 32vh;
-                
-            transition-property: top;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-out;
         }
         h1 {
             color: $pp-LightFlesh;
@@ -52,6 +42,24 @@ body.theme_PainPaint {
                 
             transition-property: top;
             transition-duration: 0.25s;
+            transition-timing-function: ease-out;
+        }
+        h3 {
+            color: darken($pp-LightFlesh, 20%);
+            font-size: 4vh;
+            top: 32vh;
+                
+            transition-property: top;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+        h4 {
+            color: $pp-RedStone;
+            font-size: 4vh;
+            top: 32vh;
+                
+            transition-property: top;
+            transition-duration: 0.2s;
             transition-timing-function: ease-out;
         }
         .btn {
@@ -198,11 +206,14 @@ body.theme_PainPaint {
         }
         &.pain-btn-active {
         
-            h4 {
-                top: 3vh;
-            }
             h1 {
                 top: 6vh
+            }
+            h3 {
+                top: 13vh
+            }
+            h4 {
+                top: 3vh;
             }
             
             .btn {
