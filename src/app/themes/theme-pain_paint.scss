@@ -149,20 +149,20 @@ body.theme_PainPaint {
             &-default {
                 background-color:  lighten( $pp-RedStone, 15%);
                 color: $pp-RedStone;
-                left: 50%;
-                margin-left: 0;
+                right: 50%;
+                margin-right: 0;
                     
-                transition-property: top, margin-left;
+                transition-property: top, margin-right;
                 transition-duration: 0.2s;
                 transition-timing-function: ease-out, ease-out;
             }
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
-                right: 50%;
-                margin-right: 0;
+                left: 50%;
+                margin-left: 0;
                     
-                transition-property: top, margin-right;
+                transition-property: top, margin-left;
                 transition-duration: 0.2s;
                 transition-timing-function: ease-out, ease-out;
             }
@@ -222,12 +222,12 @@ body.theme_PainPaint {
                     top: 34vh;
                 }
                 &-default {
-                    left: 50%;
-                    margin-left: 10vw;
-                }
-                &-success {
                     right: 50%;
                     margin-right: 10vw;
+                }
+                &-success {
+                    left: 50%;
+                    margin-left: 10vw;
                 }
             }
         }
