@@ -202,13 +202,22 @@
         <div class="text-center">
             <ul class="lead nav nav-pills">
                 <li>
-                    <a du-smooth-scroll du-scrollspy href="#konto">{{ 'ACCOUNT' | translate }}<span class="badge" ng-bind="main.data.stats.current | currency"></span></a>
+                    <a du-smooth-scroll du-scrollspy href="#konto">
+                        <span>{{ 'ACCOUNT' | translate }}</span>
+                        <span class="badge" ng-bind="main.data.stats.current | currency"></span>
+                    </a>
                 </li>
                 <li>
-                    <a du-smooth-scroll du-scrollspy href="#gains">{{ 'GOALS' | translate }}<span class="badge" ng-bind="main.data.gains.current.length"></span></a>
+                    <a du-smooth-scroll du-scrollspy href="#gains">
+                        <span>{{ 'GOALS' | translate }}</span>
+                        <span class="badge" ng-bind="main.data.gains.current.length"></span>
+                    </a>
                 </li>
                 <li>
-                    <a du-smooth-scroll du-scrollspy href="#gained">{{ 'GOALS_MET' | translate }}<span class="badge" ng-bind="main.data.gains.history.length"></span></a>
+                    <a du-smooth-scroll du-scrollspy href="#gained">
+                        <span>{{ 'GOALS_MET' | translate }}</span>
+                        <span class="badge" ng-bind="main.data.gains.history.length"></span>
+                    </a>
                 </li>
             </ul>
         </div>
