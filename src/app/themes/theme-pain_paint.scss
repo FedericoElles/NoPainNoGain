@@ -339,6 +339,44 @@ body.theme_PainPaint {
 #footer {
     background-color: lighten($pp-RedStone, 5%);
     border-top: none;
+    height: 10vh;
+    
+    .text-center {
+        text-align: left;
+    }
+    
+    .nav-pills > li > a {
+        border-radius: 0;
+        color: $pp-LightFlesh;
+        line-height: 6vh;
+        padding: 1vh 2vh 2vh 2vh;
+        font-size: 2vh;
+        
+        span {
+            display: block;
+            line-height: 2vh;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .badge {
+            line-height: 5vh;
+            padding-left: 0.2vh;
+        }
+    }
+    
+    .nav-pills > li > a.active {
+        background-color: darken($pp-RedStone, 20%);
+    }
+    .badge {
+        background-color: transparent;
+        font-family: 'Permanent Marker',  cursive;
+        font-size: 3vh;
+    }
+    .text-center {
+        margin: 0;
+    }
 }
 
     
