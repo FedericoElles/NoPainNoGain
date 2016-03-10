@@ -33,6 +33,7 @@ body.theme_PainPaint {
         position: relative;
         
         h1, h3, h4 {
+            display: inline-block;
             font-family:  'Permanent Marker',  cursive;
             position: absolute;
         }
@@ -41,6 +42,13 @@ body.theme_PainPaint {
             font-size: 6vh;
             left: 50%;
             top: 56vh;
+            width: 50vw;
+            margin-left: -25vw;
+            text-align: center;
+                
+            transition-property: margin-left, text-align;
+            transition-duration: 0.2s, 0.2s;
+            transition-timing-function: ease-out, ease-out;
         }
         h3 {
             color: darken($pp-LightFlesh, 20%);
@@ -55,8 +63,11 @@ body.theme_PainPaint {
         }
         h4 {
             color: $pp-RedStone;
+            display: block;
             font-size: 4vh;
-            top: 3vh;
+            text-align: center;
+            top: 52vh;
+            width: 100%;
         }
         .btn {
             &-area {
@@ -199,8 +210,14 @@ body.theme_PainPaint {
                     }
                 }
             }
+            h1 {
+                left: 50%;
+                margin-left: 5vw;
+                text-align: left;
+            }
             h3 {
-                top: 56vh
+                top: 58vh;
+                margin-right: 5vw;
             }
             
             .btn {
