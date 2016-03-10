@@ -28,25 +28,25 @@ body.theme_PainPaint {
     
 // konto style
 // -----------------------------------    
-    .konto {
+.konto {
         background-color: $pp-DarkRed;
         position: relative;
         
         h1, h3, h4 {
-            display: block;
             font-family:  'Permanent Marker',  cursive;
             position: absolute;
-            text-align: center;
-            width: 100%;
         }
         h1 {
             color: $pp-LightFlesh;
             font-size: 6vh;
+            left: 50%;
             top: 56vh;
         }
         h3 {
             color: darken($pp-LightFlesh, 20%);
             font-size: 4vh;
+            right: 50%;
+            text-align: right;
             top: 32vh;
                 
             transition-property: top;
@@ -200,7 +200,7 @@ body.theme_PainPaint {
                 }
             }
             h3 {
-                top: 48vh
+                top: 56vh
             }
             
             .btn {
@@ -332,7 +332,14 @@ body.theme_PainPaint {
     top:            0vh;
   }
 }
+
     
+// Gains style
+// -----------------------------------  
+.gains {
+    background-color: $pp-petrol;
+}
+
 
 // footer
 // -----------------------------------  
@@ -342,46 +349,40 @@ body.theme_PainPaint {
     height: 10vh;
     
     .text-center {
+        margin: 0;
         text-align: left;
     }
-    
-    .nav-pills > li > a {
-        border-radius: 0;
-        color: $pp-LightFlesh;
-        line-height: 6vh;
-        padding: 1vh 2vh 2vh 2vh;
-        font-size: 2vh;
-        
-        span {
-            display: block;
-            line-height: 2vh;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-        }
-        
-        .badge {
-            line-height: 5vh;
-            padding-left: 0.2vh;
-        }
-    }
-    .nav-pills > li > a.active {
-        background-color: darken($pp-RedStone, 20%);
-    }
-    .badge {
-        background-color: transparent;
-        font-family: 'Permanent Marker',  cursive;
-        font-size: 3vh;
-    }
-    .text-center {
-        margin: 0;
-    }
-    .nav {
+    .nav-pills {
         > li {
             margin: 0;
             > a {
+                border-radius: 0;
+                color: $pp-LightFlesh;
+                line-height: 6vh;
+                padding: 1vh 2vh 2vh 2vh;
+                font-size: 2vh;
+
+                span {
+                    display: block;
+                    line-height: 2vh;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                }
+
+                .badge {
+                    background-color: transparent;
+                    font-family: 'Permanent Marker',  cursive;
+                    font-size: 3vh;
+                    line-height: 5vh;
+                    padding-left: 0.2vh;
+                }
+                
                 &:hover, &:focus {
                     background-color: darken($pp-RedStone, 10%);
+                }
+                &.active {
+                    background-color: darken($pp-RedStone, 20%);
                 }
             }
         }
