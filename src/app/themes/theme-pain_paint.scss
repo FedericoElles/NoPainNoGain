@@ -53,11 +53,12 @@ body.theme_PainPaint {
         h3 {
             color: darken($pp-LightFlesh, 20%);
             font-size: 4vh;
+            margin-right: 55vw;
             right: 50%;
             text-align: right;
-            top: 32vh;
+            top: 58vh;
                 
-            transition-property: top;
+            transition-property: margin-right;
             transition-duration: 0.3s;
             transition-timing-function: ease-out;
         }
@@ -216,7 +217,8 @@ body.theme_PainPaint {
                 text-align: left;
             }
             h3 {
-                top: 58vh;
+                left: auto;
+                right: 50%;
                 margin-right: 5vw;
             }
             
