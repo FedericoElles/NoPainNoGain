@@ -143,38 +143,36 @@ body.theme_PainPaint {
             }
             &-success, &-default {
                 border: none;
+                border-radius: 12vw;
+                left: 0;
+                margin-left: -24vw;
                 padding: 0;
-                text-align: center;
-                border-radius: 6vh;
                 position: absolute;
-                width: 12vh;
-                top: 10vh;
+                text-align: center;
+                top: 57vh;
+                width: 24vw;
                 z-index: 0;
                 
                 .glyphicon {
-                    line-height: 12vh;
+                    line-height: 24vw;
                     font-size: 4vh;
                 }
             }
             &-default {
                 background-color:  lighten( $pp-RedStone, 15%);
                 color: $pp-RedStone;
-                right: 50%;
-                margin-right: 0;
                     
-                transition-property: top, margin-right;
-                transition-duration: 0.2s;
-                transition-timing-function: ease-out, ease-out;
+                transition-property: margin-left;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
             }
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
-                left: 50%;
-                margin-left: 0;
                     
-                transition-property: top, margin-left;
+                transition-property: margin-left;
                 transition-duration: 0.2s;
-                transition-timing-function: ease-out, ease-out;
+                transition-timing-function: ease-out;
             }
         }
         &.pain-btn-active {
@@ -224,17 +222,11 @@ body.theme_PainPaint {
             }
             
             .btn {
-                
-                &-success, &-default {
-                    top: 57vh;
-                }
                 &-default {
-                    right: 50%;
-                    margin-right: 10vw;
+                    margin-left: 16vw;
                 }
                 &-success {
-                    left: 50%;
-                    margin-left: 10vw;
+                    margin-left: 60vw;
                 }
             }
         }
