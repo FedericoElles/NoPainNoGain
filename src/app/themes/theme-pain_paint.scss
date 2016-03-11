@@ -7,6 +7,7 @@ $pp-LightFlesh: #f0dcd4;
 $pp-petrol: #004d63;
 
 body.theme_PainPaint {
+    overflow-x: hidden;
     background-color: darken( $pp-DarkRed, 3% );
     font-family:  'Permanent Marker',  cursive;
     margin: 0;
