@@ -359,6 +359,26 @@ body.theme_PainPaint {
         border-bottom-style: dashed;
         border-bottom-color: lighten( $pp-petrol, 15% );
     }
+    .btn-link {
+        color: $pp-LightFlesh;
+        font-size: 3vh;
+        margin-top: 0;
+                
+        transition-property: font-size, margin-top;
+        transition-duration: 0.2s, 0.2s;
+        transition-timing-function: ease-in-out, ease-in-out;
+        
+        .glyphicon {
+            font-size: 2vh;
+            margin-bottom: 0.5vh;
+        }
+        
+        &:hover {
+            font-size: 3.5vh;
+            margin-top: -0.5vh;
+            text-decoration: none;
+        }
+    }
 }
 
 
