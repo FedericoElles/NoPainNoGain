@@ -348,14 +348,17 @@ body.theme_PainPaint {
     
 // Gains style
 // -----------------------------------  
-#gains {
+.aims {
     &.section {
         background-color: $pp-petrol;
     }
-    h4, th {
+    h4, th, .text-muted {
         color: lighten( $pp-petrol, 20% );
     }
-    th {
+    h1 {
+      color: $pp-LightFlesh;  
+    }
+    .table > thead > tr > th {
         border-bottom-style: dashed;
         border-bottom-color: lighten( $pp-petrol, 15% );
     }
