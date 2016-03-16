@@ -414,6 +414,20 @@ body.theme_PainPaint {
             line-height: 4.2vh;
             letter-spacing: 0.3vh;
         }
+        .close {
+            border-radius: 3vh;
+            color: lighten( $pp-DarkRed, 30% );
+            font-size: 4vh;
+            height: 6vh;
+            line-height: 6vh;
+            opacity: 1;
+            position: absolute;
+            right: 0px;
+            text-align: center;
+            text-shadow: none;
+            top: 0px;
+            width: 6vh;
+        }
     }
     label {
         letter-spacing: 0.2vh;
