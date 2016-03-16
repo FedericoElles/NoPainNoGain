@@ -384,6 +384,67 @@ body.theme_PainPaint {
     }
 }
 
+.balanceTotal {
+    h4 {
+        text-align: center;
+    }
+}
+
+
+// modal
+// -----------------------------------  
+.modal {
+    &-dialog {
+        margin: 5vw;
+    }
+    &-content {
+        background-color: lighten( $pp-DarkRed, 20% );
+        border-radius: 5vh;
+        color: lighten( $pp-DarkRed, 50% );
+    }
+    &-header, &-body, &-footer {
+        padding: 2vh 4vh;
+    }
+    &-header {
+        border-bottom: dotted 2px lighten( $pp-DarkRed, 40% );
+        position: relative;
+        
+        h4 {
+            font-size: 3vh;
+            line-height: 4.2vh;
+            letter-spacing: 0.3vh;
+        }
+    }
+    label {
+        letter-spacing: 0.2vh;
+    }
+    &-footer {
+        border-top: dotted 2px lighten( $pp-DarkRed, 40% );
+        text-align: center;
+        
+        a {
+            border: none;
+            border-radius: 3vh;
+            font-size: 2vh;
+            letter-spacing: 0.2vh;
+            line-height: 4vh;
+            padding: 1vh 3vh;
+        }
+        
+        .btn {
+            
+            &-default{
+                background-color: lighten( $pp-DarkRed, 10% );
+                color: lighten( $pp-DarkRed, 50% );
+            }
+            &-primary {
+                background-color: $pp-petrol;
+                color: $pp-LightFlesh;
+            }
+        }
+    }
+}
+
 
 // footer
 // -----------------------------------  
