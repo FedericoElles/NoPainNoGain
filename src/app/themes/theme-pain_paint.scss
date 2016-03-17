@@ -407,6 +407,7 @@ body.theme_PainPaint {
     }
     &-header {
         border-bottom: dotted 2px lighten( $pp-DarkRed, 40% );
+        padding-right: 8vh;
         position: relative;
         
         h4 {
@@ -419,14 +420,23 @@ body.theme_PainPaint {
             color: lighten( $pp-DarkRed, 30% );
             font-size: 4vh;
             height: 6vh;
-            line-height: 6vh;
+            line-height: 5.5vh;
             opacity: 1;
             position: absolute;
-            right: 0px;
+            right: 1vh;
             text-align: center;
             text-shadow: none;
-            top: 0px;
+            top: 1vh;
             width: 6vh;
+            
+            transition-property: color, font-size;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            
+            &:hover {
+                color: lighten( $pp-DarkRed, 40% );
+                font-size: 5vh;
+            }
         }
     }
     label {
