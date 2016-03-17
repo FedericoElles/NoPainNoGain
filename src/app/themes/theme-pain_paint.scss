@@ -402,7 +402,7 @@ body.theme_PainPaint {
         border-radius: 5vh;
         color: lighten( $pp-DarkRed, 50% );
     }
-    &-header, &-body, &-footer {
+    &-header, &-body {
         padding: 2vh 4vh;
     }
     &-header {
@@ -434,26 +434,55 @@ body.theme_PainPaint {
     }
     &-footer {
         border-top: dotted 2px lighten( $pp-DarkRed, 40% );
+        padding: 0;
+        position: relative;
         text-align: center;
+        height: 9vh;
         
         a {
             border: none;
             border-radius: 3vh;
             font-size: 2vh;
             letter-spacing: 0.2vh;
-            line-height: 4vh;
-            padding: 1vh 3vh;
+            line-height: 4.5vh;
+            margin: 0;
+            padding: 0 2vh;
+            position: absolute;
+            top: 1.75vh;
+            
+            transition-property: font-size, padding, line-height, top, margin-left, margin-right;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            
+            &:hover {
+                font-size: 2.4vh;
+                padding: 0 2vh;
+                line-height: 5vh;
+                top: 1.5vh;
+            }
         }
         
         .btn {
             
-            &-default{
-                background-color: lighten( $pp-DarkRed, 10% );
-                color: lighten( $pp-DarkRed, 50% );
+            &-default.btn {
+                background-color: lighten( $pp-DarkRed, 15% );
+                color: lighten( $pp-DarkRed, 40% );
+                margin-right: 2vh;
+                right: 50%;
+                
+                &:hover {
+                    margin-right: 1.25vh;
+                }
             }
-            &-primary {
+            &-primary.btn {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
+                margin-left: 2vh;
+                left: 50%;
+                
+                &:hover {
+                    margin-left: 1.25vh;
+                }
             }
         }
     }
