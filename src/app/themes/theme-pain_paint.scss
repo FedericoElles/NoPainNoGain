@@ -390,6 +390,29 @@ body.theme_PainPaint {
             text-decoration: none;
         }
     }
+    .table-striped > tbody > tr:nth-of-type(2n+1) {
+        background-color: lighten( $pp-petrol, 4% );
+    }
+    .table > tbody > tr > td {
+        border-top-color:  lighten( $pp-petrol, 7% );
+        border-top-style: dashed;
+        border-top-width: 2px;
+        color: $pp-LightFlesh;
+        vertical-align: middle;
+        
+        &:first-child {
+            text-align: right;
+            
+            span {
+                background-color: lighten( $pp-petrol, 7% );
+                border-radius: 1.5vh;
+                display: inline-block;
+                height: 3vh;
+                text-align: center;
+                width: 3vh;
+            }
+        }
+    }
 }
 
 #gains {
@@ -419,19 +442,8 @@ body.theme_PainPaint {
         padding-left: 8vw;
         padding-right: 8vw;
     }
-    
     .text-center {
         padding: 0;
-    }
-    .table-striped > tbody > tr:nth-of-type(2n+1) {
-        background-color: lighten( $pp-petrol, 4% );
-    }
-    .table > tbody > tr > td {
-        border-top-color:  lighten( $pp-petrol, 7% );
-        border-top-style: dashed;
-        border-top-width: 2px;
-        color: $pp-LightFlesh;
-        vertical-align: middle;
     }
     .progress {
         margin-bottom: 0;
