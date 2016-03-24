@@ -351,6 +351,14 @@ body.theme_PainPaint {
 .aims {
     &.section {
         background-color: $pp-petrol;
+        
+        h4 {
+            font-size: 4vh;
+            line-height: 8vh;
+            margin: 0;
+            vertical-align: middle;
+            text-align: center;
+        }
     }
     h4, th, .text-muted {
         color: lighten( $pp-petrol, 20% );
@@ -388,6 +396,29 @@ body.theme_PainPaint {
     height: auto;
     min-height: 100vh;
     position: relative;
+    
+    &.section {
+        
+        h4 {
+        }
+    }
+    .row {  
+        position: relative;
+        
+        .btn {
+            left: 50%;
+            margin-left: -40vw;
+            position: absolute;
+            top: -8vh;
+            width: 80vw;
+        }
+    }
+    .col-md-12 {
+        height: 8vh;
+        margin-bottom: 8vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
     
     .text-center {
         padding: 0;
