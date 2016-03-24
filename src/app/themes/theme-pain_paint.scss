@@ -386,6 +386,7 @@ body.theme_PainPaint {
 
 #gains {
     height: auto;
+    min-height: 100vh;
     position: relative;
     
     .text-center {
@@ -403,6 +404,10 @@ body.theme_PainPaint {
     }
     .progress {
         margin-bottom: 0;
+        
+        &-bar {
+            background-color: $pp-RedStone;
+        }
     }
 }
 
