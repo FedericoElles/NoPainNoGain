@@ -566,6 +566,11 @@ body.theme_PainPaint {
         line-height: 5vh;
         padding: 0.5vh 2vh;
         vertical-align: baseline;
+        
+        &:focus {
+            background-color: lighten( $pp-DarkRed, 54% );
+            border: dotted 2px lighten( $pp-DarkRed, 64% );
+        }
     }
 }
 
