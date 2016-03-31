@@ -22,7 +22,8 @@ body.theme_PainPaint {
         border-radius: 0;
         border: none;
         box-shadow: none;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         width: 100vw;
     }
 
@@ -445,7 +446,6 @@ body.theme_PainPaint {
         }
     }
     .col-md-12 {
-        height: auto;
         margin-bottom: 8vh;
         padding-left: 8vw;
         padding-right: 8vw;
@@ -461,7 +461,6 @@ body.theme_PainPaint {
         }
     }
 }
-
 
 .balanceTotal {
     h4 {
