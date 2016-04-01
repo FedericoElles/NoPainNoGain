@@ -66,7 +66,7 @@
                                         <span ng-bind="main.data.stats.current/gain.amount*100 | number:0 "></span> %
                                     </progressbar>
                                 </td>
-                                <td>
+                                <td class="gain-btn">
                                     <a ng-click="main.really('gain', index, gain)" ng-disabled="main.data.stats.current/gain.amount<1" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-ok"></span></a>
                                     <a ng-click="main.really('drop', index, gain)" class="btn btn-link btn-xs"><span class="glyphicon glyphicon-remove"></span></a>
                                 </td>
