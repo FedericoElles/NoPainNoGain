@@ -347,7 +347,7 @@ body.theme_PainPaint {
 }
 
     
-// Gains style
+// Aims style
 // -----------------------------------  
 .aims {
     &.section {
@@ -424,6 +424,9 @@ body.theme_PainPaint {
     }
 }
 
+    
+// Gains style
+// -----------------------------------  
 #gains {
     height: auto;
     min-height: 100vh;
@@ -462,6 +465,16 @@ body.theme_PainPaint {
     }
 }
 
+
+// Gained and history
+// ----------------------------------- 
+#gained, #history {
+    
+}
+    
+    
+// Different stuff
+// -----------------------------------  
 .balanceTotal {
     h4 {
         text-align: center;
