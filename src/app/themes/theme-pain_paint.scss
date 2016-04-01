@@ -469,6 +469,54 @@ body.theme_PainPaint {
 // Gained and history
 // ----------------------------------- 
 #gained, #history {
+    .table {
+        
+        > thead , > tbody {
+            tr {
+                > th, > td {
+                    &:nth-child(2n) {
+                        position: relative;
+                        width: 100%;
+                        
+                        span {
+                            display: block;
+                            max-width: none;
+                            position: absolute;
+                            top: 0;
+                            left: 1vh;
+                            right: 1vh;
+                        }
+                    }
+                    &:first-child, &:last-child {
+                        padding: 0 1vh;
+                        
+                        span {
+                        }
+                    }
+                    &:first-child {
+                        text-align: center;
+                        
+                        span {
+                            text-align: inherit;
+                            width: 20vh;
+                        }
+                    }
+                    &:last-child {
+                        text-align: right;
+                        
+                        span {
+                            text-align: inherit;
+                        }
+                    }
+                } 
+            }
+        }
+        > tbody > tr > td {
+
+            &:first-child {
+            }
+        }
+    }
     
 }
     
