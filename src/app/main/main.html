@@ -59,7 +59,7 @@
                         <tbody>
                             <tr ng-repeat="(index, gain) in main.data.gains.current track by $index">
                                 <td><span ng-bind="index+1"></span></td>
-                                <td><span ng-bind="gain.name"></span></td>
+                                <td class="gain-cell"><span ng-bind="gain.name"></span></td>
                                 <td><span ng-bind="gain.amount | currency"></span></td>
                                 <td>
                                     <progressbar value="main.data.stats.current/gain.amount*100">
