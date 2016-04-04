@@ -370,6 +370,9 @@ body.theme_PainPaint {
     .table > thead > tr > th {
         border-bottom-style: dashed;
         border-bottom-color: lighten( $pp-petrol, 15% );
+        font-size: 2.2vh;
+        line-height: 3vh;
+        padding: 0.5vh;
     }
     .btn-link-new-aim {
         color: $pp-LightFlesh;
@@ -422,6 +425,7 @@ body.theme_PainPaint {
         }
         .glyphicon {
             color: $pp-LightFlesh;
+            font-size: 1.8vh;
         }
     }
 }
@@ -468,6 +472,37 @@ body.theme_PainPaint {
             line-height: 4vh;
         }
     }
+    .gain {
+        
+        &-name {
+            position: relative;
+
+            span {
+                left: 0;
+                max-width: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        &-amount {
+            padding: 0 1vh;
+            text-align: right;
+            width: 10vh;
+            
+            span {
+                text-align: right;
+            }
+        }
+        &-stats {
+            width: 12vh;
+        }
+        &-btn {
+            text-align: right;
+            width: 10vh;
+        }
+    }
+    
 }
 
 
@@ -493,10 +528,7 @@ body.theme_PainPaint {
                         }
                     }
                     &:first-child, &:last-child {
-                        padding: 0 1vh;
-                        
-                        span {
-                        }
+                        padding: 0.5vh;
                     }
                     &:first-child {
                         text-align: center;
