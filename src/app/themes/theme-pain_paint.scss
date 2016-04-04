@@ -399,23 +399,25 @@ body.theme_PainPaint {
         border-top-style: dashed;
         border-top-width: 2px;
         color: $pp-LightFlesh;
+        font-size: 2.2vh;
         line-height: 6vh;
         padding: 0;
         vertical-align: middle;
         
         &:first-child {
             line-height: 0;
-            text-align: right;padding-right: 1vh;
-            width: 5vh;
+            text-align: right;
+            padding-right: 1vh;
+            width: 6vh;
             
             span {
                 background-color: lighten( $pp-petrol, 7% );
-                border-radius: 1.5vh;
+                border-radius: 2vh;
                 display: inline-block;
-                height: 3vh;
-                line-height: 3vh;
+                height: 4vh;
+                line-height: 4vh;
                 text-align: center;
-                width: 3vh;
+                width: 4vh;
             }
         }
         .glyphicon {
@@ -498,7 +500,8 @@ body.theme_PainPaint {
                         
                         span {
                             text-align: inherit;
-                            width: 20vh;
+                            max-width: none;
+                            width: 14vh;
                         }
                     }
                     &:last-child {
@@ -517,7 +520,9 @@ body.theme_PainPaint {
             }
         }
     }
-    
+    .col-md-12 {
+        padding: 0;
+    }
 }
     
     
