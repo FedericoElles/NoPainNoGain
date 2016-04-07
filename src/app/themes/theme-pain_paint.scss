@@ -575,6 +575,10 @@ body.theme_PainPaint {
 .modal {
     &-dialog {
         margin: 5vw;
+        
+        &.modal-sm {
+            width: auto;
+        }
     }
     &-content {
         background-color: lighten( $pp-DarkRed, 20% );
@@ -584,8 +588,19 @@ body.theme_PainPaint {
     &-header, &-body {
         padding: 2vh 4vh;
     }
+    &-body {
+        p {
+            font-size: 1.8vh;
+            margin: 0;
+            
+            span {
+                color: $pp-LightFlesh;
+                font-size: 2.2vh;
+            }
+        }
+    }
     &-header {
-        border-bottom: dotted 2px lighten( $pp-DarkRed, 40% );
+        border-bottom: dotted 0.4vh lighten( $pp-DarkRed, 40% );
         padding-right: 8vh;
         position: relative;
         
@@ -622,7 +637,7 @@ body.theme_PainPaint {
         letter-spacing: 0.2vh;
     }
     &-footer {
-        border-top: dotted 2px lighten( $pp-DarkRed, 40% );
+        border-top: dotted 0.4vh lighten( $pp-DarkRed, 40% );
         padding: 0;
         position: relative;
         text-align: center;
