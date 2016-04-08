@@ -6,7 +6,7 @@ $pp-RedStone: #b24f2a;
 $pp-LightFlesh: #f0dcd4;
 $pp-petrol: #004d63;
 
-body.theme_PainPaint {
+.theme_PainPaint {
     overflow-x: hidden;
     background-color: darken( $pp-DarkRed, 3% );
     font-family:  'Permanent Marker',  cursive;
@@ -30,7 +30,7 @@ body.theme_PainPaint {
     
 // konto style
 // -----------------------------------    
-.konto {
+    .konto {
         background-color: $pp-DarkRed;
         position: relative;
         
@@ -232,6 +232,444 @@ body.theme_PainPaint {
             }
         }
     }
+    
+    // Aims style
+    // -----------------------------------  
+    .aims {
+        &.section {
+            background-color: $pp-petrol;
+
+            h4 {
+                font-size: 4vh;
+                line-height: 8vh;
+                margin: 0;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+        h4, th, .text-muted {
+            color: lighten( $pp-petrol, 20% );
+        }
+        h1 {
+          color: $pp-LightFlesh;  
+        }
+        .table > thead > tr > th {
+            border-bottom-style: dashed;
+            border-bottom-color: lighten( $pp-petrol, 15% );
+            font-size: 2.2vh;
+            line-height: 3vh;
+            padding: 0.5vh;
+        }
+        .btn-link-new-aim {
+            color: $pp-LightFlesh;
+            font-size: 3vh;
+            margin-top: 0;
+
+            transition-property: font-size, margin-top;
+            transition-duration: 0.2s, 0.2s;
+            transition-timing-function: ease-in-out, ease-in-out;
+
+            .glyphicon {
+                font-size: 2vh;
+                margin-bottom: 0.5vh;
+            }
+
+            &:hover {
+                font-size: 3.5vh;
+                margin-top: -0.5vh;
+                text-decoration: none;
+            }
+        }
+        .table-striped > tbody > tr:nth-of-type(2n+1) {
+            background-color: lighten( $pp-petrol, 4% );
+        }
+        .table > tbody > tr > td {
+            border-top-color:  lighten( $pp-petrol, 7% );
+            border-top-style: dashed;
+            border-top-width: 2px;
+            color: $pp-LightFlesh;
+            font-size: 2.2vh;
+            line-height: 6vh;
+            padding: 0;
+            vertical-align: middle;
+
+            &:first-child {
+                line-height: 0;
+                text-align: right;
+                padding-right: 1vh;
+                width: 6vh;
+
+                span {
+                    background-color: lighten( $pp-petrol, 7% );
+                    border-radius: 2vh;
+                    display: inline-block;
+                    height: 4vh;
+                    line-height: 4vh;
+                    text-align: center;
+                    width: 4vh;
+                }
+            }
+            .glyphicon {
+                color: $pp-LightFlesh;
+                font-size: 1.8vh;
+            }
+        }
+    }
+
+
+    // Gains style
+    // -----------------------------------  
+    #gains {
+        height: auto;
+        min-height: 100vh;
+        position: relative;
+
+        &.section {
+
+            h4 {
+            }
+        }
+        .row {  
+            position: relative;
+
+            .btn-link-new-aim {
+                left: 50%;
+                margin-left: -40vw;
+                position: absolute;
+                top: -8vh;
+                width: 80vw;
+            }
+        }
+        .col-md-12 {
+            margin-bottom: 8vh;
+            padding-left: 8vw;
+            padding-right: 8vw;
+        }
+        .text-center {
+            padding: 0;
+        }
+        .progress {
+            margin-bottom: 0;
+            height: 4vh;
+
+            &-bar {
+                background-color: $pp-RedStone;
+                font-size: 2.2vh;
+                line-height: 4vh;
+            }
+        }
+        .gain {
+
+            &-name {
+                position: relative;
+
+                span {
+                    left: 0;
+                    max-width: none;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            &-amount {
+                padding: 0 1vh;
+                text-align: right;
+                width: 10vh;
+
+                span {
+                    text-align: right;
+                }
+            }
+            &-stats {
+                width: 12vh;
+            }
+            &-btn {
+                text-align: right;
+                width: 10vh;
+            }
+        }
+
+    }
+
+
+    // Gained and history
+    // ----------------------------------- 
+    #gained, #history {
+        .table {
+
+            > thead , > tbody {
+                tr {
+                    > th, > td {
+                        &:nth-child(2n) {
+                            position: relative;
+                            width: 100%;
+
+                            span {
+                                display: block;
+                                max-width: none;
+                                position: absolute;
+                                top: 0;
+                                left: 1vh;
+                                right: 1vh;
+                            }
+                        }
+                        &:first-child, &:last-child {
+                            padding: 0.5vh;
+                        }
+                        &:first-child {
+                            text-align: center;
+
+                            span {
+                                text-align: inherit;
+                                max-width: none;
+                                width: 14vh;
+                            }
+                        }
+                        &:last-child {
+                            text-align: right;
+
+                            span {
+                                text-align: inherit;
+                            }
+                        }
+                    } 
+                }
+            }
+            > tbody > tr > td {
+
+                &:first-child {
+                }
+            }
+        }
+        .col-md-12 {
+            padding: 0;
+        }
+    }
+
+
+    // Different stuff
+    // -----------------------------------  
+    .balanceTotal {
+        h4 {
+            text-align: center;
+        }
+    }
+
+
+    // modal
+    // -----------------------------------  
+    .modal {
+        &-dialog {
+            margin: 5vw;
+
+            &.modal-sm {
+                width: auto;
+            }
+        }
+        &-content {
+            background-color: lighten( $pp-DarkRed, 20% );
+            border-radius: 5vh;
+            color: lighten( $pp-DarkRed, 50% );
+        }
+        &-header, &-body {
+            padding: 2vh 4vh;
+        }
+        &-body {
+            p {
+                font-size: 1.8vh;
+                margin: 0;
+
+                span {
+                    color: $pp-LightFlesh;
+                    font-size: 2.2vh;
+                }
+            }
+        }
+        &-header {
+            border-bottom: dotted 0.4vh lighten( $pp-DarkRed, 40% );
+            padding-right: 8vh;
+            position: relative;
+
+            h4 {
+                font-size: 3vh;
+                line-height: 4.2vh;
+                letter-spacing: 0.3vh;
+            }
+            .close {
+                border-radius: 3vh;
+                color: lighten( $pp-DarkRed, 30% );
+                font-size: 4vh;
+                height: 6vh;
+                line-height: 5.5vh;
+                opacity: 1;
+                position: absolute;
+                right: 1vh;
+                text-align: center;
+                text-shadow: none;
+                top: 1vh;
+                width: 6vh;
+
+                transition-property: color, font-size;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-in-out;
+
+                &:hover {
+                    color: lighten( $pp-DarkRed, 40% );
+                    font-size: 5vh;
+                }
+            }
+        }
+        label {
+            letter-spacing: 0.2vh;
+        }
+        &-footer {
+            border-top: dotted 0.4vh lighten( $pp-DarkRed, 40% );
+            padding: 0;
+            position: relative;
+            text-align: center;
+            height: 9vh;
+
+            a {
+                border: none;
+                border-radius: 3vh;
+                font-size: 2vh;
+                letter-spacing: 0.2vh;
+                line-height: 4.5vh;
+                margin: 0;
+                padding: 0 2vh;
+                position: absolute;
+                top: 1.75vh;
+
+                transition-property: font-size, padding, line-height, top, margin-left, margin-right;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-in-out;
+
+                &:hover, &:focus {
+                    font-size: 2.4vh;
+                    padding: 0 2vh;
+                    line-height: 5vh;
+                    top: 1.5vh;
+                }
+            }
+
+            .btn {
+
+                &-default.btn {
+                    background-color: lighten( $pp-DarkRed, 15% );
+                    color: lighten( $pp-DarkRed, 40% );
+                    margin-right: 2vh;
+                    right: 50%;
+
+                    &:hover, &:focus {
+                        margin-right: 1.25vh;
+                    }
+                }
+                &-primary.btn {
+                    background-color: $pp-petrol;
+                    color: $pp-LightFlesh;
+                    margin-left: 2vh;
+                    left: 50%;
+
+                    &:hover, &:focus {
+                        margin-left: 1.25vh;
+                    }
+                }
+            }
+        }
+        .form-control {
+            background-color: lighten( $pp-DarkRed, 50% );
+            border: dotted 2px lighten( $pp-DarkRed, 40% );
+            border-radius: 3vh;
+            box-shadow: none;
+            color: $pp-petrol;
+            font-size: 3vh;
+            height: 6vh;
+            line-height: 5vh;
+            padding: 0.5vh 2vh;
+            vertical-align: baseline;
+
+            &:focus {
+                background-color: lighten( $pp-DarkRed, 54% );
+                border: dotted 2px lighten( $pp-DarkRed, 64% );
+            }
+        }
+    }
+
+
+    // footer
+    // -----------------------------------  
+    #footer {
+        background-color: lighten($pp-RedStone, 5%);
+        border-top: none;
+        height: 10vh;
+
+        .text-center {
+            margin: 0;
+            text-align: left;
+        }
+        .nav-pills {
+            > li {
+                margin: 0;
+                > a {
+                    border-radius: 0;
+                    color: $pp-LightFlesh;
+                    line-height: 6vh;
+                    padding: 1vh 2vh 2vh 2vh;
+                    font-size: 2vh;
+
+                    span {
+                        display: block;
+                        line-height: 2vh;
+                        margin: 0;
+                        padding: 0;
+                        text-align: left;
+                    }
+
+                    .badge {
+                        background-color: transparent;
+                        font-family: 'Permanent Marker',  cursive;
+                        font-size: 3vh;
+                        line-height: 5vh;
+                        padding-left: 0.2vh;
+                    }
+
+                    &:hover, &:focus {
+                        background-color: darken($pp-RedStone, 10%);
+                    }
+                    &.active {
+                        background-color: darken($pp-RedStone, 20%);
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    // -----------------------------------
+    // Media landscape
+    // -----------------------------------
+
+
+    @media (orientation: landscape) { 
+        .konto {
+            .btn {
+
+                &-success, &-default {
+                    border-radius: 8vw;
+                    margin-left: -20vw;
+                    top: 57vh;
+                    width: 16vw;
+
+                    .glyphicon {
+                        line-height: 16vw;
+                        font-size: 4vh;
+                    }
+                }
+            }
+        }
+    }
 }
 
     
@@ -344,429 +782,5 @@ body.theme_PainPaint {
     left:           -5.5vh; 
     top:            0vh;
   }
-}
-
-    
-// Aims style
-// -----------------------------------  
-.aims {
-    &.section {
-        background-color: $pp-petrol;
-        
-        h4 {
-            font-size: 4vh;
-            line-height: 8vh;
-            margin: 0;
-            vertical-align: middle;
-            text-align: center;
-        }
-    }
-    h4, th, .text-muted {
-        color: lighten( $pp-petrol, 20% );
-    }
-    h1 {
-      color: $pp-LightFlesh;  
-    }
-    .table > thead > tr > th {
-        border-bottom-style: dashed;
-        border-bottom-color: lighten( $pp-petrol, 15% );
-        font-size: 2.2vh;
-        line-height: 3vh;
-        padding: 0.5vh;
-    }
-    .btn-link-new-aim {
-        color: $pp-LightFlesh;
-        font-size: 3vh;
-        margin-top: 0;
-                
-        transition-property: font-size, margin-top;
-        transition-duration: 0.2s, 0.2s;
-        transition-timing-function: ease-in-out, ease-in-out;
-        
-        .glyphicon {
-            font-size: 2vh;
-            margin-bottom: 0.5vh;
-        }
-        
-        &:hover {
-            font-size: 3.5vh;
-            margin-top: -0.5vh;
-            text-decoration: none;
-        }
-    }
-    .table-striped > tbody > tr:nth-of-type(2n+1) {
-        background-color: lighten( $pp-petrol, 4% );
-    }
-    .table > tbody > tr > td {
-        border-top-color:  lighten( $pp-petrol, 7% );
-        border-top-style: dashed;
-        border-top-width: 2px;
-        color: $pp-LightFlesh;
-        font-size: 2.2vh;
-        line-height: 6vh;
-        padding: 0;
-        vertical-align: middle;
-        
-        &:first-child {
-            line-height: 0;
-            text-align: right;
-            padding-right: 1vh;
-            width: 6vh;
-            
-            span {
-                background-color: lighten( $pp-petrol, 7% );
-                border-radius: 2vh;
-                display: inline-block;
-                height: 4vh;
-                line-height: 4vh;
-                text-align: center;
-                width: 4vh;
-            }
-        }
-        .glyphicon {
-            color: $pp-LightFlesh;
-            font-size: 1.8vh;
-        }
-    }
-}
-
-    
-// Gains style
-// -----------------------------------  
-#gains {
-    height: auto;
-    min-height: 100vh;
-    position: relative;
-    
-    &.section {
-        
-        h4 {
-        }
-    }
-    .row {  
-        position: relative;
-        
-        .btn-link-new-aim {
-            left: 50%;
-            margin-left: -40vw;
-            position: absolute;
-            top: -8vh;
-            width: 80vw;
-        }
-    }
-    .col-md-12 {
-        margin-bottom: 8vh;
-        padding-left: 8vw;
-        padding-right: 8vw;
-    }
-    .text-center {
-        padding: 0;
-    }
-    .progress {
-        margin-bottom: 0;
-        height: 4vh;
-        
-        &-bar {
-            background-color: $pp-RedStone;
-            font-size: 2.2vh;
-            line-height: 4vh;
-        }
-    }
-    .gain {
-        
-        &-name {
-            position: relative;
-
-            span {
-                left: 0;
-                max-width: none;
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-        }
-        &-amount {
-            padding: 0 1vh;
-            text-align: right;
-            width: 10vh;
-            
-            span {
-                text-align: right;
-            }
-        }
-        &-stats {
-            width: 12vh;
-        }
-        &-btn {
-            text-align: right;
-            width: 10vh;
-        }
-    }
-    
-}
-
-
-// Gained and history
-// ----------------------------------- 
-#gained, #history {
-    .table {
-        
-        > thead , > tbody {
-            tr {
-                > th, > td {
-                    &:nth-child(2n) {
-                        position: relative;
-                        width: 100%;
-                        
-                        span {
-                            display: block;
-                            max-width: none;
-                            position: absolute;
-                            top: 0;
-                            left: 1vh;
-                            right: 1vh;
-                        }
-                    }
-                    &:first-child, &:last-child {
-                        padding: 0.5vh;
-                    }
-                    &:first-child {
-                        text-align: center;
-                        
-                        span {
-                            text-align: inherit;
-                            max-width: none;
-                            width: 14vh;
-                        }
-                    }
-                    &:last-child {
-                        text-align: right;
-                        
-                        span {
-                            text-align: inherit;
-                        }
-                    }
-                } 
-            }
-        }
-        > tbody > tr > td {
-
-            &:first-child {
-            }
-        }
-    }
-    .col-md-12 {
-        padding: 0;
-    }
-}
-    
-    
-// Different stuff
-// -----------------------------------  
-.balanceTotal {
-    h4 {
-        text-align: center;
-    }
-}
-
-
-// modal
-// -----------------------------------  
-.modal {
-    &-dialog {
-        margin: 5vw;
-        
-        &.modal-sm {
-            width: auto;
-        }
-    }
-    &-content {
-        background-color: lighten( $pp-DarkRed, 20% );
-        border-radius: 5vh;
-        color: lighten( $pp-DarkRed, 50% );
-    }
-    &-header, &-body {
-        padding: 2vh 4vh;
-    }
-    &-body {
-        p {
-            font-size: 1.8vh;
-            margin: 0;
-            
-            span {
-                color: $pp-LightFlesh;
-                font-size: 2.2vh;
-            }
-        }
-    }
-    &-header {
-        border-bottom: dotted 0.4vh lighten( $pp-DarkRed, 40% );
-        padding-right: 8vh;
-        position: relative;
-        
-        h4 {
-            font-size: 3vh;
-            line-height: 4.2vh;
-            letter-spacing: 0.3vh;
-        }
-        .close {
-            border-radius: 3vh;
-            color: lighten( $pp-DarkRed, 30% );
-            font-size: 4vh;
-            height: 6vh;
-            line-height: 5.5vh;
-            opacity: 1;
-            position: absolute;
-            right: 1vh;
-            text-align: center;
-            text-shadow: none;
-            top: 1vh;
-            width: 6vh;
-            
-            transition-property: color, font-size;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            
-            &:hover {
-                color: lighten( $pp-DarkRed, 40% );
-                font-size: 5vh;
-            }
-        }
-    }
-    label {
-        letter-spacing: 0.2vh;
-    }
-    &-footer {
-        border-top: dotted 0.4vh lighten( $pp-DarkRed, 40% );
-        padding: 0;
-        position: relative;
-        text-align: center;
-        height: 9vh;
-        
-        a {
-            border: none;
-            border-radius: 3vh;
-            font-size: 2vh;
-            letter-spacing: 0.2vh;
-            line-height: 4.5vh;
-            margin: 0;
-            padding: 0 2vh;
-            position: absolute;
-            top: 1.75vh;
-            
-            transition-property: font-size, padding, line-height, top, margin-left, margin-right;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            
-            &:hover, &:focus {
-                font-size: 2.4vh;
-                padding: 0 2vh;
-                line-height: 5vh;
-                top: 1.5vh;
-            }
-        }
-        
-        .btn {
-            
-            &-default.btn {
-                background-color: lighten( $pp-DarkRed, 15% );
-                color: lighten( $pp-DarkRed, 40% );
-                margin-right: 2vh;
-                right: 50%;
-                
-                &:hover, &:focus {
-                    margin-right: 1.25vh;
-                }
-            }
-            &-primary.btn {
-                background-color: $pp-petrol;
-                color: $pp-LightFlesh;
-                margin-left: 2vh;
-                left: 50%;
-                
-                &:hover, &:focus {
-                    margin-left: 1.25vh;
-                }
-            }
-        }
-    }
-    .form-control {
-        background-color: lighten( $pp-DarkRed, 50% );
-        border: dotted 2px lighten( $pp-DarkRed, 40% );
-        border-radius: 3vh;
-        box-shadow: none;
-        color: $pp-petrol;
-        font-size: 3vh;
-        height: 6vh;
-        line-height: 5vh;
-        padding: 0.5vh 2vh;
-        vertical-align: baseline;
-        
-        &:focus {
-            background-color: lighten( $pp-DarkRed, 54% );
-            border: dotted 2px lighten( $pp-DarkRed, 64% );
-        }
-    }
-}
-
-
-// footer
-// -----------------------------------  
-#footer {
-    background-color: lighten($pp-RedStone, 5%);
-    border-top: none;
-    height: 10vh;
-    
-    .text-center {
-        margin: 0;
-        text-align: left;
-    }
-    .nav-pills {
-        > li {
-            margin: 0;
-            > a {
-                border-radius: 0;
-                color: $pp-LightFlesh;
-                line-height: 6vh;
-                padding: 1vh 2vh 2vh 2vh;
-                font-size: 2vh;
-
-                span {
-                    display: block;
-                    line-height: 2vh;
-                    margin: 0;
-                    padding: 0;
-                    text-align: left;
-                }
-
-                .badge {
-                    background-color: transparent;
-                    font-family: 'Permanent Marker',  cursive;
-                    font-size: 3vh;
-                    line-height: 5vh;
-                    padding-left: 0.2vh;
-                }
-                
-                &:hover, &:focus {
-                    background-color: darken($pp-RedStone, 10%);
-                }
-                &.active {
-                    background-color: darken($pp-RedStone, 20%);
-                }
-            }
-        }
-    }
-    
-}
-
-
-
-// -----------------------------------
-// Media landscape
-// -----------------------------------
-
-
-@media (orientation: landscape) { 
-
 }
     
