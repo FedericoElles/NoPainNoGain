@@ -657,14 +657,23 @@ $pp-petrol: #004d63;
             .btn {
 
                 &-success, &-default {
-                    border-radius: 8vw;
+                    border-radius: 4vw;
                     margin-left: -20vw;
                     top: 57vh;
-                    width: 16vw;
+                    width: 8vw;
 
                     .glyphicon {
-                        line-height: 16vw;
-                        font-size: 4vh;
+                        line-height: 8vw;
+                        font-size: 2vw;
+                    }
+                }
+            }
+            &.pain-btn-active {
+                .btn {
+                    &-default {
+                        margin-left: 32vw;
+                    }
+                    &-success {
                     }
                 }
             }
