@@ -678,6 +678,28 @@ $pp-petrol: #004d63;
                 }
             }
         }
+        .aims {
+            &.section {
+                h4 {
+                    font-size: 7.2vh;
+                    line-height: 12.8vh; 
+                }
+            }
+        } 
+        #gains {
+            .row {
+                .btn {
+                    &-link-new-aim {
+                        font-size: 4.2vh;
+                        top: -10vh;
+
+                        &:hover {
+                            font-size: 5.4vh;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
