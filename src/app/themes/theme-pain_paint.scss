@@ -386,16 +386,16 @@ $pp-petrol: #004d63;
             &-btn {
                 text-align: right;
                 width: 10vh;
+                padding-right: 0.5vh;
                 
                 a {
                     border: none;
                     margin: 0;
-                    padding: 0;
-                    font-size: 2.4vh;
-                    width: 4vh;
+                    width: 3.6vh;
                     
                     .glyphicon {
-                        line-height: 4vh;
+                        font-size: 2.2vh;
+                        line-height: 3.6vh;
                     }
                 }
             }
@@ -735,15 +735,27 @@ $pp-petrol: #004d63;
                     }
                 }
             }
-            .gain-btn {
-                width: 18vh;
-                span {
-                    
+            .gain {
+                &-amount {
+                    span {
+                        width: 24vh;
+                    }
                 }
-            }
-            .gain-amount {
-                span {
-                    width: 24vh;
+                &-stats {
+                    width: 12vh;
+                }
+                &-btn {
+                    width: 18vh;
+                    padding-right: 1vh;
+
+                    a {
+                        width: 6vh;
+
+                        .glyphicon {
+                            font-size: 3.6vh;
+                            line-height: 6vh;
+                        }
+                    }
                 }
             }
             .progress {
