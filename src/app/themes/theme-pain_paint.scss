@@ -12,7 +12,7 @@ $pp-petrol: #004d63;
     font-family:  'Permanent Marker',  cursive;
     margin: 0;
     padding: 0;
-    
+
     .container, .row {
         margin: 0;
         padding: 0;
@@ -27,13 +27,13 @@ $pp-petrol: #004d63;
         width: 100vw;
     }
 
-    
+
 // konto style
-// -----------------------------------    
+// -----------------------------------
     .konto {
         background-color: $pp-DarkRed;
         position: relative;
-        
+
         h1, h3, h4 {
             display: inline-block;
             font-family:  'Permanent Marker',  cursive;
@@ -47,7 +47,7 @@ $pp-petrol: #004d63;
             width: 50vw;
             margin-left: -25vw;
             text-align: center;
-                
+
             transition-property: margin-left, text-align;
             transition-duration: 0.2s, 0.2s;
             transition-timing-function: ease-out, ease-out;
@@ -59,7 +59,7 @@ $pp-petrol: #004d63;
             right: 50%;
             text-align: right;
             top: 58vh;
-                
+
             transition-property: margin-right;
             transition-duration: 0.3s;
             transition-timing-function: ease-out;
@@ -97,23 +97,23 @@ $pp-petrol: #004d63;
                     position: absolute;
                     top: 1vh;
                     text-shadow: 0 0 0 #fff;
-                    
-                    transition-property:            color, 
-                                                    text, 
-                                                    text-shadow, 
-                                                    font-size, 
-                                                    left, 
+
+                    transition-property:            color,
+                                                    text,
+                                                    text-shadow,
+                                                    font-size,
+                                                    left,
                                                     top;
                     transition-duration: 0.1s;
-                    
-                    transition-timing-function:     ease-in-out, 
-                                                    ease-in-out, 
-                                                    ease-in-out, 
-                                                    ease-in-out 
-                                                    ease-in-out, 
+
+                    transition-timing-function:     ease-in-out,
+                                                    ease-in-out,
+                                                    ease-in-out,
+                                                    ease-in-out
+                                                    ease-in-out,
                                                     ease-in-out;
                 }
-                
+
             }
             &-headline, &-value {
                 display: block;
@@ -128,7 +128,7 @@ $pp-petrol: #004d63;
                 font-size: 12vh;
                 left: -5vh;
                 top: 3vh;
-                    
+
                 transition-property: font-size, left, top, color;
                 transition-duration: 0.1s;
                 transition-timing-function: ease-in, ease-in, ease-in, ease-in;
@@ -137,7 +137,7 @@ $pp-petrol: #004d63;
                 color: lighten( $pp-RedStone, 25%);
                 left: -5vh;
                 top: 10vh;
-                
+
                 &-num {
                     font-size: 3vh;
                 }
@@ -153,7 +153,7 @@ $pp-petrol: #004d63;
                 top: 57vh;
                 width: 16vw;
                 z-index: 0;
-                
+
                 .glyphicon {
                     line-height: 16vw;
                     font-size: 4vh;
@@ -162,7 +162,7 @@ $pp-petrol: #004d63;
             &-default {
                 background-color:  lighten( $pp-RedStone, 15%);
                 color: $pp-RedStone;
-                    
+
                 transition-property: margin-left;
                 transition-duration: 0.3s;
                 transition-timing-function: ease-out;
@@ -170,14 +170,14 @@ $pp-petrol: #004d63;
             &-success {
                 background-color: $pp-petrol;
                 color: $pp-LightFlesh;
-                    
+
                 transition-property: margin-left;
                 transition-duration: 0.2s;
                 transition-timing-function: ease-out;
             }
         }
         &.pain-btn-active {
-            
+
             .btn-primary {
                 box-shadow: 0 0 8px rgba(0,0,0,0.8);
 
@@ -221,7 +221,7 @@ $pp-petrol: #004d63;
                 right: 50%;
                 margin-right: 5vw;
             }
-            
+
             .btn {
                 &-default {
                     margin-left: 24vw;
@@ -232,9 +232,9 @@ $pp-petrol: #004d63;
             }
         }
     }
-    
+
     // Aims style
-    // -----------------------------------  
+    // -----------------------------------
     .aims {
         &.section {
             background-color: $pp-petrol;
@@ -251,7 +251,7 @@ $pp-petrol: #004d63;
             color: lighten( $pp-petrol, 20% );
         }
         h1 {
-          color: $pp-LightFlesh;  
+          color: $pp-LightFlesh;
         }
         .table > thead > tr > th {
             border-bottom-style: dashed;
@@ -318,7 +318,7 @@ $pp-petrol: #004d63;
 
 
     // Gains style
-    // -----------------------------------  
+    // -----------------------------------
     #gains {
         height: auto;
         min-height: 100vh;
@@ -329,7 +329,7 @@ $pp-petrol: #004d63;
             h4 {
             }
         }
-        .row {  
+        .row {
             position: relative;
 
             .btn-link-new-aim {
@@ -387,12 +387,12 @@ $pp-petrol: #004d63;
                 text-align: right;
                 width: 10vh;
                 padding-right: 0.5vh;
-                
+
                 a {
                     border: none;
                     margin: 0;
                     width: 3.6vh;
-                    
+
                     .glyphicon {
                         font-size: 2.2vh;
                         line-height: 3.6vh;
@@ -405,7 +405,7 @@ $pp-petrol: #004d63;
 
 
     // Gained and history
-    // ----------------------------------- 
+    // -----------------------------------
     #gained, #history {
         .table {
 
@@ -444,7 +444,7 @@ $pp-petrol: #004d63;
                                 text-align: inherit;
                             }
                         }
-                    } 
+                    }
                 }
             }
             > tbody > tr > td {
@@ -460,7 +460,7 @@ $pp-petrol: #004d63;
 
 
     // Different stuff
-    // -----------------------------------  
+    // -----------------------------------
     .balanceTotal {
         h4 {
             text-align: center;
@@ -469,7 +469,7 @@ $pp-petrol: #004d63;
 
 
     // modal
-    // -----------------------------------  
+    // -----------------------------------
     .modal {
         &-lg {
             width: auto;
@@ -612,7 +612,7 @@ $pp-petrol: #004d63;
 
 
     // footer
-    // -----------------------------------  
+    // -----------------------------------
     #footer {
         background-color: lighten($pp-RedStone, 5%);
         border-top: none;
@@ -667,7 +667,7 @@ $pp-petrol: #004d63;
     // -----------------------------------
 
 
-    @media (orientation: landscape) { 
+    @media (orientation: landscape) {
         .konto {
             .btn {
 
@@ -697,7 +697,7 @@ $pp-petrol: #004d63;
             &.section {
                 h4 {
                     font-size: 7.2vh;
-                    line-height: 12.8vh; 
+                    line-height: 12.8vh;
                 }
             }
             .table > thead > tr > th {
@@ -708,7 +708,7 @@ $pp-petrol: #004d63;
             .table > tbody > tr > td {
                 font-size: 3.6vh;
                 line-height: 10vh;
-                
+
                 &:first-child {
                     padding-right: 2vh;
                     width: 10vh;
@@ -721,7 +721,7 @@ $pp-petrol: #004d63;
                     }
                 }
             }
-        } 
+        }
         #gains {
             .row {
                 .btn {
@@ -762,7 +762,7 @@ $pp-petrol: #004d63;
                 height: 7.2vh;
             }
         }
-        
+
         #gained, #history {
             .table {
 
@@ -781,86 +781,93 @@ $pp-petrol: #004d63;
                                 padding-right: 4vh;
                                 width: 26vh;
                             }
-                        } 
+                        }
                     }
-                
+
             }
             .col-md-12 {
                 padding: 0;
             }
         }
     }
+    .modal {
+      .control-label {
+        font-size: 3.2vh;
+        margin-bottom: 0.6vh;
+        margin-left: 2.2vh;
+      }
+    }
 }
 
-    
+
 // konto animation
-// -----------------------------------  
+// -----------------------------------
 
 @-webkit-keyframes btn-IconFlash {
   from {
-    text-shadow:    0 0 1.25vh #fff, 
-                    0 0 2.5vh #fff, 
-                    0 0 3.75vh #fff, 
-                    0 0 5vh #FF9900, 
-                    0 0 8.75vh #FF9900, 
-                    0 0 10vh #FF9900, 
-                    0 0 12.5vh #FF9900, 
+    text-shadow:    0 0 1.25vh #fff,
+                    0 0 2.5vh #fff,
+                    0 0 3.75vh #fff,
+                    0 0 5vh #FF9900,
+                    0 0 8.75vh #FF9900,
+                    0 0 10vh #FF9900,
+                    0 0 12.5vh #FF9900,
                     0 0 18.75vh #FF9900;
   }
   to {
-    text-shadow:    0 0 2.5vh #fff, 
-                    0 0 5vh #fff, 
-                    0 0 7.5vh #fff, 
-                    0 0 10vh #FF9900, 
-                    0 0 17.5vh #FF9900, 
-                    0 0 20vh #FF9900, 
-                    0 0 25vh #FF9900, 
+    text-shadow:    0 0 2.5vh #fff,
+                    0 0 5vh #fff,
+                    0 0 7.5vh #fff,
+                    0 0 10vh #FF9900,
+                    0 0 17.5vh #FF9900,
+                    0 0 20vh #FF9900,
+                    0 0 25vh #FF9900,
                     0 0 37.5vh #FF9900;
   }
 }
 
 @-moz-keyframes btn-IconFlash {
   from {
-    text-shadow:    0 0 1.25vh #fff, 
-                    0 0 2.5vh #fff, 
-                    0 0 3.75vh #fff, 
-                    0 0 5vh #FF9900, 
-                    0 0 8.75vh #FF9900, 
-                    0 0 10vh #FF9900, 
-                    0 0 12.5vh #FF9900, 
+    text-shadow:    0 0 1.25vh #fff,
+                    0 0 2.5vh #fff,
+                    0 0 3.75vh #fff,
+                    0 0 5vh #FF9900,
+                    0 0 8.75vh #FF9900,
+                    0 0 10vh #FF9900,
+                    0 0 12.5vh #FF9900,
                     0 0 18.75vh #FF9900;
   }
   to {
-    text-shadow:    0 0 2.5vh #fff, 
-                    0 0 5vh #fff, 
-                    0 0 7.5vh #fff, 
-                    0 0 10vh #FF9900, 
-                    0 0 17.5vh #FF9900, 
-                    0 0 20vh #FF9900, 
-                    0 0 25vh #FF9900, 
+    text-shadow:    0 0 2.5vh #fff,
+                    0 0 5vh #fff,
+                    0 0 7.5vh #fff,
+                    0 0 10vh #FF9900,
+                    0 0 17.5vh #FF9900,
+                    0 0 20vh #FF9900,
+                    0 0 25vh #FF9900,
                     0 0 37.5vh #FF9900;
   }
 }
 
 @keyframes btn-IconFlash {
   from {
-    text-shadow:    0 0 1.25vh #fff, 
-                    0 0 2.5vh #fff, 
-                    0 0 3.75vh #fff, 
-                    0 0 5vh #FF9900, 
-                    0 0 8.75vh #FF9900, 
-                    0 0 10vh #FF9900, 
-                    0 0 12.5vh #FF9900, 
+    text-shadow:    0 0 1.25vh #fff,
+                    0 0 2.5vh #fff,
+                    0 0 3.75vh #fff,
+                    0 0 5vh #FF9900,
+                    0 0 8.75vh #FF9900,
+                    0 0 10vh #FF9900,
+                    0 0 12.5vh #FF9900,
                     0 0 18.75vh #FF9900;
   }
   to {
-    text-shadow:    0 0 2.5vh #fff, 
-                    0 0 5vh #fff, 
-                    0 0 7.5vh #fff, 
-                    0 0 10vh #FF9900, 
-                    0 0 17.5vh #FF9900, 
-                    0 0 20vh #FF9900, 
-                    0 0 25vh #FF9900, 
+    text-shadow:    0 0 2.5vh #fff,
+                    0 0 5vh #fff,
+                    0 0 7.5vh #fff,
+                    0 0 10vh #FF9900,
+                    0 0 17.5vh #FF9900,
+                    0 0 20vh #FF9900,
+                    0 0 25vh #FF9900,
                     0 0 37.5vh #FF9900;
   }
 }
@@ -873,7 +880,7 @@ $pp-petrol: #004d63;
   }
   to {
     font-size:      15vh;
-    left:           -5.5vh; 
+    left:           -5.5vh;
     top:            0vh;
   }
 }
@@ -886,7 +893,7 @@ $pp-petrol: #004d63;
   }
   to {
     font-size:      15vh;
-    left:           -5.5vh; 
+    left:           -5.5vh;
     top:            0vh;
   }
 }
@@ -899,8 +906,7 @@ $pp-petrol: #004d63;
   }
   to {
     font-size:      15vh;
-    left:           -5.5vh; 
+    left:           -5.5vh;
     top:            0vh;
   }
 }
-    
