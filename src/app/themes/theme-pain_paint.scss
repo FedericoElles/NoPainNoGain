@@ -760,6 +760,12 @@ $pp-petrol: #004d63;
             }
             .progress {
                 height: 7.2vh;
+
+                &-bar {
+                  line-height: 7.2vh;
+                  font-size: 3.2vh;
+                  letter-spacing: 0.3vh;
+                }
             }
         }
 
