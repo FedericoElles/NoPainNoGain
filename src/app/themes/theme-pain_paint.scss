@@ -796,6 +796,29 @@ $pp-petrol: #004d63;
         margin-bottom: 0.6vh;
         margin-left: 2.2vh;
       }
+      &-footer {
+        a {
+            border-radius: 4vh;
+            font-size: 3.2vh;
+            letter-spacing: 0.4vh;
+            line-height: 6vh;
+            margin: 0;
+            padding: 0 3vh;
+            position: absolute;
+            top: 1.5vh;
+
+            transition-property: font-size, padding, line-height, top, margin-left, margin-right;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+            &:hover, &:focus {
+                font-size: 3.6vh;
+                padding: 0 3vh;
+                line-height: 7vh;
+                top: 1vh;
+            }
+        }
+      }
     }
 }
 
